@@ -1,0 +1,10 @@
+name: biod_test
+title:
+username: indobis
+account: indobis
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 18163784
+bundleId: 12683930
+url: https://indobis.shinyapps.io/biod_test/
+version: 1

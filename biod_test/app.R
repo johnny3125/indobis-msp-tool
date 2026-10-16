@@ -42,8 +42,11 @@ calc_diversity <- function(sp_vec) {
 
 # --- DEFINE UI ---
 ui <- fluidPage(
-  titlePanel("IndOBIS Marine Spatial Planning (MSP) Tool - Hexagonal Grid & Indicators"),
-  
+  #titlePanel("IndOBIS Biodiversity Indices Analyzer"),
+  # Centered Title Header
+  div(
+    h2("IndOBIS Biodiversity Indices Analyzer", style = "text-align: center; font-weight: bold; color: #2c3e50;"),
+    style = "margin-top: 15px; margin-bottom: 25px;"),
   sidebarLayout(
     sidebarPanel(
       helpText("Set coordinates for your Northern Indian Ocean region of interest:"),
