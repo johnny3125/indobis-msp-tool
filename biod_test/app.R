@@ -44,9 +44,21 @@ calc_diversity <- function(sp_vec) {
 ui <- fluidPage(
   #titlePanel("IndOBIS Biodiversity Indices Analyzer"),
   # Centered Title Header
-  div(
-    h2("IndOBIS Biodiversity Indices Analyzer", style = "text-align: center; font-weight: bold; color: #2c3e50;"),
-    style = "margin-top: 15px; margin-bottom: 25px;"),
+  # div(
+  #   h2("IndOBIS Biodiversity Indices Analyzer", style = "text-align: center; font-weight: bold; color: #2c3e50;"),
+  #   style = "margin-top: 15px; margin-bottom: 25px;"),
+  fluidRow(
+    column(2, 
+           # Refer to the local image inside the www folder
+           tags$img(src = "IndOBIS Logo.png", height = "75px", style = "margin-top: 5px;margin-bottom: 5px")
+    ),
+    column(8, 
+           h1("Spatial Biodiversity & Indicator Analyzer", style = "text-align: center; font-weight: bold; color: #2c3e50; margin-top: 15px")
+    ),
+    column(2, "")
+  ),
+  
+  hr(),
   sidebarLayout(
     sidebarPanel(
       helpText("Set coordinates for your Northern Indian Ocean region of interest:"),
